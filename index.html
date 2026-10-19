@@ -1,44 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>RSVP ♡</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fibbles' Supapink 21st</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Libre+Barcode+39+Text&family=Libre+Baskerville&family=Licorice&family=Lilex:wght@400;500&family=Lilita+One&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div class="topband"></div>
+<main class="wrap">
+  <header class="lockup" id="lockup" aria-label="Fibbles' Supapink 21st">
+    <div class="script" id="script" aria-hidden="true"><span class="fibbles">Fibbles'</span><span class="supa">supapink</span></div>
+    <div class="code" id="code" aria-hidden="true">2 1 S T</div>
+  </header>
 
-    <h1>You're Invited! ♡</h1>
+  <div class="when">22 May | 3pm - midnight | 23 Estuary Crescent, The Ponds</div>
 
-    <p>We'd love to see you there!</p>
+  <p class="thanks" id="thanks" role="status" hidden></p>
 
-    <form id="rsvp-form">
+  <div class="cols">
+    <div class="col">
+      <section class="win">
+        <h2>&#9671; dress code <i>&#11833;&#11833; &bull; &bull;</i></h2>
+        <p>as <span class="hl">pink</span> and <span class="hl">KAWAII</span> as possible! be ready to be on camera ^.^</p>
+      </section>
+      <section class="win">
+        <h2>&#9671; about gifts <i>&#11833;&#11833; &bull; &bull;</i></h2>
+        <p>no gifts needed please!! a handwritten/handmade card is more than enough.</p>
+        <p>participating in the compulsory fun would be the greatest gift for me.</p>
+      </section>
+      <section class="win">
+        <h2>&#9671; notes <i>&#11833;&#11833; &bull; &bull;</i></h2>
+        <p>snacks and dinner provided :)</p>
+        <p>contact me if you have any questions or concerns!</p>
+      </section>
+    </div>
 
-        <label for="name">Your name</label>
-        <input
-            type="text"
-            id="name"
-            required
-        >
+    <div class="col right">
+      <a class="rsvp-btn" href="rsvp.html">click to rsvp</a>
 
-        <label for="attendance">Are you attending?</label>
-
-        <select id="attendance" required>
-            <option value="">Please select</option>
-            <option value="yes">Yes ♡</option>
-            <option value="no">No</option>
-        </select>
-
-        <button type="submit">
-            RSVP ♡
-        </button>
-
-    </form>
-
-    <script src="script.js"></script>
-
+      <section class="win" aria-labelledby="list-title">
+        <h2 class="list-head"><span id="list-title">&#9733; &#8942; rsvp list <i>&#11833;&#11833;</i></span><span class="n" id="rsvp-count"></span></h2>
+        <ul class="list" id="rsvp-list" aria-live="polite"><li class="empty">...</li></ul>
+      </section>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

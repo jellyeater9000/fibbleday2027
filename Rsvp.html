@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fibbles' Supapink 21st</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Libre+Barcode+39+Text&family=Libre+Baskerville&family=Licorice&family=Lilex:wght@400;500&family=Lilita+One&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topband"></div>
+<main class="wrap">
+  <header class="lockup" id="lockup" aria-label="Fibbles' Supapink 21st">
+    <div class="script" id="script" aria-hidden="true"><span class="fibbles">Fibbles'</span><span class="supa">supapink</span></div>
+    <div class="code" id="code" aria-hidden="true">2 1 S T</div>
+  </header>
+
+  <div class="when">22 May | 3pm - midnight | 23 Estuary Crescent, The Ponds</div>
+
+  <form class="card" id="rsvp-form" autocomplete="off">
+    <div class="name-row">
+      <label for="rsvp-name">Your name:</label>
+      <input type="text" id="rsvp-name" name="name" maxlength="40" required>
+    </div>
+
+    <fieldset class="stars-set">
+      <legend class="ask">Can you come?</legend>
+      <div class="stars">
+        <label class="star yes">
+          <input type="radio" name="status" value="coming" required>
+          <svg viewBox="0 0 220 210" aria-hidden="true">
+            <polygon class="edge" points="110,32 139.4,71.5 186.1,87.3 157.6,127.5 157,176.7 110,162 63,176.7 62.4,127.5 33.9,87.3 80.6,71.5"/>
+            <polygon class="face" points="110,32 139.4,71.5 186.1,87.3 157.6,127.5 157,176.7 110,162 63,176.7 62.4,127.5 33.9,87.3 80.6,71.5"/>
+          </svg>
+          <span class="star-text">yes!<br>yippee!</span>
+        </label>
+        <label class="star no">
+          <input type="radio" name="status" value="cant" required>
+          <svg viewBox="0 0 220 210" aria-hidden="true">
+            <polygon class="edge" points="110,32 139.4,71.5 186.1,87.3 157.6,127.5 157,176.7 110,162 63,176.7 62.4,127.5 33.9,87.3 80.6,71.5"/>
+            <polygon class="face" points="110,32 139.4,71.5 186.1,87.3 157.6,127.5 157,176.7 110,162 63,176.7 62.4,127.5 33.9,87.3 80.6,71.5"/>
+          </svg>
+          <span class="star-text">nope<br>:(</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <button class="submit" id="rsvp-submit" type="submit">submit</button>
+    <p class="msg" id="rsvp-msg" role="status" aria-live="polite"></p>
+  </form>
+</main>
+
+<script src="script.js"></script>
+<script src="rsvp.js"></script>
+</body>
+</html>
